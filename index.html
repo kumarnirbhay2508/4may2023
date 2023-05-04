@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,600&family=Cabin:wght@500&family=Dancing+Script&family=Mulish:ital@1&family=Oswald&family=Poltawski+Nowy:ital@1&family=Poppins&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&family=Source+Code+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1#n1 {
+        color: red;
+        font-family: "Roboto", sans-serif;
+      }
+      h1#n2 {
+        color: orange;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      h1#n3 {
+        color: aqua;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      #n4 {
+        color: violet;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+      }
+      #n5 {
+        color: yellow;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+      }
+      #n6 {
+        color: navy;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+      }
+      #n7 {
+        color: blueviolet;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n8 {
+        color: brown;
+        font-family: "Cabin", sans-serif;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n9 {
+        color: #442414;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n10 {
+        color: green;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n11 {
+        color: aqua;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n12 {
+        color: pink;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n13 {
+        color: tomato;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n14 {
+        color: gray;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n15 {
+        color: darkkhaki;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n16 {
+        color: darkorange;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n17 {
+        color: #442414;
+        font-family: "Arimo", sans-serif;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n18 {
+        color: chartreuse;
+        font-family: "Arimo", sans-serif;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      #n19 {
+        color: chocolate;
+        font-family: "Cabin", sans-serif;
+        font-family: "Dancing Script", cursive;
+        font-family: "Mulish", sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Poltawski Nowy", serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto Slab", serif;
+        font-family: "Source Code Pro", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="n1">
+      'Shoot-at-sight' order from govt in 'extreme cases' in violence-hit
+      Manipur
+    </h1>
+    <p>
+      The situation in Manipur is tense with Army and the Assam Rifles deployed
+      to contain the widespread riots. The Manipur government has issued a
+      'shoot at sight' order in extreme cases in the violence-hit state if all
+      forms of persuasion, warnings are exhausted. As the state is seeing
+      violent protests over the Tribal Solidarity March organised by the All
+      Tribal Student Union Manipur protesting the ST status demand of non-tribal
+      Meiteis, the government authorised the DMs and SDMs to issue
+      shoot-at-sight orders. "In view of the prevailing law and order situation
+      following the unwanted incidents that occurred at the Tribal Solidarity
+      March 2023 held on May 3, 2023, and in order to maintain public order and
+      tranquillity in the State, the Governor of Manipur has authorized all
+      District Magistrates, Sub- Divisional Magistrates and all Executive
+      Magistrates/ Special Executive Magistrates detailed by the District
+      Magistrates concerned to issue Shoot at sight orders in extreme cases
+      whereby all forms of persuasion, warning, reasonable force, etc. had been
+      exhausted under the provisions of law under CrPC, 1973 and the situation
+      could not be controlled," the order said. Read | Triggers of Manipur
+      violence: Shrinking resources, old fault lines, court order
+    </p>
+    <img src="./img/1.png" alt="fire image" />
+    <p>
+      Clashes broke out in Manipur on Wednesday among communities over the march
+      which was organised by tribals who account for 40% of the state's
+      population. They are opposing the ST status of the Meitei community. The
+      Manipur high court recently asked the state government to send a
+      recommendation to the Centre on the demand of the Metei community.
+    </p>
+    <p>
+      Attacks and retaliatory attacks are going on in several districts of the
+      state leading to arson, vandalism. About 5,000 people have been shifted
+      from the violence-hit areas.
+    </p>
+    <p>
+      Chief Minister N Biren Singh said the the violence was caused by a
+      misunderstanding. Curfew has been imposed in Meitei-dominated Imphal West,
+      Kakching, Thoubal, Jiribam, and Bishnupur districts, and tribal-dominated
+      Churachandpur, Kangpokpi, and Tengnoupal districts.
+    </p>
+    <hr />
+
+    <h1 id="n2">
+      Gangster Anil Dujana killed in UP police encounter, cops said he 'fired at
+      team'
+    </h1>
+    <p>
+      Anil Dujana had over 60 cases of murder, extortion and other criminal
+      charges registered against him.
+    </p>
+    <img src="./img/2.png" alt="Manipur image" />
+    <p>
+      Gangster Anil Dujana, 36, has been killed in an encounter with a team of
+      Uttar Pradesh Police's Special Task Force (STF) in Meerut. "Anil Dujana, a
+      wanted criminal, was surrounded by our team in a village in Meerut on
+      Thursday afternoon. Dujana fired at our team to escape and was killed in
+      retaliatory firing," Amitabh Yash, the STF's Additional Director-General,
+      said,
+    </p>
+    <p>
+      According to news agency PTI, the team that surrounded and killed Dujana
+      was led by Brijesh Singh, an Additional Superintendent of Police with the
+      STF.
+    </p>
+    <p>
+      Dujana - the resident of village in Noida's Gautam Buddh Nagar - had over
+      60 cases of murder, extortion and other criminal charges registered
+      against him, police said. He operated largely in the National Capital
+      Region and walked out of jail last week after bail in a murder case.
+    </p>
+    <p>
+      According to media reports, shortly after being released Dujana began
+      threatening a key witness in the same murder case. Unconfirmed reports
+      said he planned to kill the witness.
+    </p>
+    <hr />
+
+    <h1 id="n3">
+      Operation Kaveri: ‘Herculean task’ of evacuating Indians from Sudan's El
+      Fashir achieved
+    </h1>
+    <p>
+      According to the embassy, two buses carrying 80 Indians from El Fashir,
+      located in western Sudan, safely reached Port Sudan after travelling for
+      over 48 hours.
+    </p>
+    <img src="./img/3.png" alt="oper kaver" />
+    <p>
+      The Indian embassy in Sudan's capital, Khartoum, announced on Thursday
+      that they had achieved one of the most “herculean tasks” of “Operation
+      Kaveri” on its ninth day, successfully evacuating Indians stranded in the
+      conflict-hit city of El Fashir.
+    </p>
+    <p>
+      Sharing the route from El Fashir city to Port Sudan on Twitter, the
+      embassy wrote, “9th day of #OperationKaveri. One of the most herculean
+      tasks of bringing Indians stranded in El Fashir was achieved today.”
+    </p>
+
+    <hr />
+    <h1 id="n4">
+      SRH vs KKR Live Score, IPL 2023: Gurbaz departs for golden duck as
+      Sunrisers Hyderabad get early breakthrough vs Kolkata
+    </h1>
+    <p>
+      SRH vs KKR Live Score, IPL 2023: Sunrisers Hyderabad will take on Kolkata
+      Knight Riders in a re-match in Hyderabad. Follow live score of today's IPL
+      match.
+    </p>
+    <img src="./img/4.png" alt="" />
+    <p>
+      IPL 2023 SRH vs KKR Live Score: Kolkata Knight Riders won the toss and
+      opted to bat vs Sunrisers Hyderabad in Match 47 of IPL 2023, at the Rajiv
+      Gandhi International Stadium in Hyderabad on Thursday. Time is running out
+      for Kolkata. With just three wins in nine outings, their IPL 2023 campaign
+      is hanging by a thread. An underperforming bowling unit, especially the
+      pacers, has pushed them into a situation where they have to win all their
+      remaining five matches to stand a good chance of making it to the
+      playoffs. SRH, on the other hand, are not in the best of positions either.
+      They too have just six points but have played one match less than the
+      Nitish Rana-led side.
+    </p>
+    <hr />
+    <h1 id="n5">
+      US denies involvement in alleged drone attack on Putin's residence, says
+      Kremlin ‘lying’
+    </h1>
+    <p>
+      Russia alleges that Ukraine carried out a "terrorist attack" overnight
+      Tuesday into Wednesday with two drones, aiming to kill President Vladimir
+      Putin,
+    </p>
+    <img src="./img/5.png" alt="joh baiden image" />
+    <p>
+      The White House on Wednesday denied any involvement in an alleged drone
+      attack on the Kremlin, after Russian spokesman Dmitry Peskov accused
+      Washington of guiding Ukraine to launch the assault.
+    </p>
+    <p>
+      "We had nothing to do with this," said John Kirby, spokesperson for the
+      White House National Security Council, on MSNBC.
+    </p>
+    <p>"Peskov is just lying there, pure and simple," he added.</p>
+    <p>
+      Russia alleges that Ukraine carried out a "terrorist attack" overnight
+      Tuesday into Wednesday with two drones, aiming to kill President Vladimir
+      Putin, a charge which Kyiv has denied.
+    </p>
+    <p>
+      Peskov, Putin's longtime press secretary, said earlier Wednesday that
+      "decisions on such attacks are not made in Kyiv, but in Washington."
+    </p>
+    <p>"Kyiv only does what it is told to do," he added.</p>
+    <p>
+      The incident at the Kremlin comes amid several other recent explosions and
+      trail derailments on Russian and occupied Ukrainian territory.
+    </p>
+    <p>
+      Kirby reiterated in his interview to MSNBC on Wednesday that Washington
+      does not support or condone attacks by Ukraine outside its borders.
+    </p>
+    <p>
+      "We've been clear with them publicly and we've been clear with them
+      privately that we do not encourage nor do we enable them to strike outside
+      Ukraine," he said.
+    </p>
+    <hr />
+
+    <h1 id="n6">
+      Kathal trailer: Sanya Malhotra is on the case of missing jackfruits in
+      this quirky satire
+    </h1>
+    <p>
+      Kathal trailer: Sanya Malhotra plays a police officer assigned to track
+      down stolen jackfruits from a MLA's home in this crazy comedy. In
+      Netflix's upcoming film Kathal, it's not a missing person's case, but a
+      case of missing jackfruits. The quirky satire shows Sanya Malhotra as a
+      young police officer named Mahima Basor assigned to find a pair of
+      jackfruits stolen from an MLA's home. Directed by first-time filmmaker
+      Yashowardhan Mishra, Kathal is produced by Sikhya Entertainment and Balaji
+      Telefilms. The comedy will premiere on Netflix on May 19. (Also read:
+      Guneet Monga revisits school with Shaunak Sen, thanks principal for help:
+      ‘Two alumni made it to the Oscars’)
+    </p>
+    <img src="./img/6.png" alt="" />
+    <p>
+      Besides Sanya, the film also stars Anantvijay Joshi, Gurpal Singh, Neha
+      Saraf, Vijay Raaz, and Rajpal Yadav. While Anantvijay is a fellow cop,
+      Rajpal plays a determined journalist out to get the scoop on the fruity
+      story. Set in the fictional town called Moba, the story follows Vijay as a
+      politician named Pateria who lodges a complaint with the police. They are
+      surprised to find no missing bodies, but two missing 15 kg jackfruits aka
+      kathals instead.
+    </p>
+    <p>
+      The police try to trick the politician's family by replacing the fruits,
+      but they insist that this is not their prize-winning fruit. It is up to
+      the young police officer to make some sense of the events around her and
+      try to find a solution. During the course of her findings, it seems she
+      comes across an actual case to investigate and gets Rajpal's help to gain
+      some attention.
+    </p>
+    <hr />
+    <h1 id="n7">
+      ‘Ran away from Delhi cricket’: Gambhir's vicious attack on Rajat Sharma
+      for ‘paid PR’ on reporting Kohli episode
+    </h1>
+    <p>
+      Gambhir launched a vicious attack on former DDCA chief Rajat Sharma
+      without naming him. He was not pleased with Sharma's reporting of the
+      Kohli episode.
+    </p>
+    <img src="./img/7.png" alt="Gautam gambhir image" />
+    <p>
+      At a time when his on-field brawl with Virat Kohli during an IPL 2023
+      match has been receiving criticism from all quarters, Gautam Gambhir has
+      attracted a fresh controversy with a hard-hitting cryptic tweet for TV
+      journalist and former Delhi and District Association (DDCA) president
+      Rajat Sharma. Gambhir did not name Rajat Sharma in his explosive tweet but
+      dropped multiple hints about the person he was referring to.
+    </p>
+    <p>
+      Rajat, in his news programme on India TV, claimed Gambhir had an inflated
+      ego after being elected a Member of Parliament. He also said that Virat,
+      whom he called an "aggressive, no-nonsense player" was someone who could
+      "give it back" to Gambhir. The journalist claimed further that Gambhir's
+      actions were against sportsmanship, did not behove his status as an MP and
+      were damaging to the gentleman's game.
+    </p>
+    <hr />
+
+    <h1 id="n8">
+      Palak Tiwari clarifies she didn't mean to imply anything inappropriate
+      about Salman Khan: 'I made a mistake, I'll learn'
+    </h1>
+    <p>
+      Palak Tiwari shared she didn't mean to create a controversy over Salman
+      Khan's rule for women on film sets. She said she made a mistake and would
+      learn from it
+    </p>
+    <img src="./img/8.png" alt="salman khan image" />
+    <p>
+      Last month, Palak Tiwari made a comment that Salman Khan had a rule about
+      how women should dress on the sets of Antim. Before she made her acting
+      debut with Salman's Kisi Ka Bhai Kisi Ki Jaan, Palak was an assistant to
+      filmmaker Mahesh Manjrekar for the film. Salman, in another interview,
+      addressed her remarks and shared that women's bodies are more precious and
+      should be covered. Since the comments about the dress code for women has
+      blown up, Palak addressed them in a new interview in which she stressed
+      that she didn't mean to imply anything inappropriate about Salman and his
+      methods on set. (Also read: ‘Jitni dhaki huyi hongi, better hai’: Salman
+      Khan on not allowing low neckline outfits on his set)
+    </p>
+    <p>
+      Palak is the daughter of actor Shweta Tiwari and Salman Khan has also
+      known her since she was a small child. Shweta was the winner of the
+      television reality show Bigg Boss, hosted by Salman, in 2010. After Palak
+      had made the comments and later clarified that she wanted to have certain
+      guidelines on how to dress around senior artistes, Salman had also added
+      that there was a problem in the way men looked at women and he didn't like
+      that behaviour around him.
+    </p>
+    <p>
+      In an interview with ETimes, Palak explained the misunderstanding, "[It's]
+      part and parcel of what we do. Also, I'm not really taken aback by it,
+      since I know Salman sir is an extremely understanding individual and he
+      knows me. He knows that I would never say anything malapropos about him,
+      ever. I take this as more of a learning experience. This is the best way
+      to learn, making a mistake [since] I never want to be in that position
+      again. I think it's the most conducive way to learn. I made a mistake,
+      I'll learn and it's something I'll keep in mind for the rest of my life
+      now."
+    </p>
+    <p>
+      Kisi Ka Bhai Kisi Ki Jaan released on the occasion of Eid on April 21.
+      Palak also has the film The Virgin Tree which stars Sanjay Dutt lined up
+      for release this year. The horror-comedy also stars Sunny Singh and Mouni
+      Roy. Palak became known after her appearance in the music video of Harrdy
+      Sandhu's Punjabi hit song Bijlee Bijlee.
+    </p>
+    <hr />
+
+    <h1 id="n9">Will the double-engine rhetoric work in Karnataka?</h1>
+    <p>
+      BJP’s strategy will have to overcome allegations of corruption and
+      anti-incumbency. The import of a double-engine promise will have
+      ramifications
+    </p>
+    <img src="./img/9.png" alt="Narender modi image" />
+    <p>
+      Double-engine sarkar (government) is a term that has steadily crept into
+      the political lexicon in the last nine years, since Narendra Modi became
+      prime minister (PM). The double-engine rhetoric is part of the Bharatiya
+      Janata Party (BJP)’s armoury in every state election, designed to convince
+      the voter that only when the same party rules at the state and Centre will
+      the benefits of development reach the people. It also mirrors the PM’s
+      larger than life
+    </p>
+    <hr />
+
+    <h1 id="n10">Signs that your relationship is over: Therapist shares</h1>
+    <p>
+      From avoiding each other to being disrespected, here are a few signs that
+      your relationship is over.
+    </p>
+    <img src="./img/10.png" alt="upset male & female" />
+    <p>
+      Sometimes we come across situations when we know that the relationship is
+      over. No matter how much time we take to accept it or try to ignore the
+      signs, when a relationship is over, there’s not much that we can do about
+      it. The healthy way of getting over a relationship that is over is to
+      first accept it and then move on. “As sad as it is, sometimes
+      relationships can reach a point of no return. And sometimes, we don't know
+      how to end the relationship, or we end it poorly (ghosting, sabotaging)
+      because we didn't recognize the end on time,” wrote Therapist Israa Nasir
+      as she explained the signs that show that the relationship has reached its
+      end.
+    </p>
+
+    <hr />
+
+    <h1 id="n11">
+      Medalists don't grow on trees: Wrestlers' reply to abusers on Twitter
+    </h1>
+    <p>
+      “Our blood and sweat are there in the soil of the country,” protesting
+      wrestlers said in a stern message to critics.
+    </p>
+    <img src="./img/11.png" alt="wrestlers image" />
+    <p>
+      Sakshi Malik, Bajrang Punia on Thursday gave a stern reply to people
+      criticising the protesting wrestlers by posting a video of their practice,
+      performance and victory. "Our blood and sweat are there in the soil of the
+      country. Our message to those who are spreading hatred on Twitter is
+      medalists don't grow on tree," Sakshi and Punia wrote borrowing the line
+      from the Bollywood movie Dangal -- on Phogat sisters. Read | ‘Delhi police
+      abused, kicked us’: Farmers stopped at Singhu Border from going to Jantar
+      Mantar to support wrestlers
+    </p>
+    <p>
+      The wrestlers protesting in demand of Wrestling Federation of India chief
+      Brij Bhushan Sharan Singh's arrest have come under attack after several
+      political leaders from opposition parties including that of the Congress
+      and the AAP visited the protesters at Jantar Mantar.
+    </p>
+    <hr />
+
+    <h1 id="n12">
+      Sara Ali Khan shares pics from Kashmir diary with mom Amrita Singh; actor
+      takes dip in swimming pool, enjoys full moon
+    </h1>
+    <p>
+      Sara Ali Khan took a trip to Kashmir with Amrita Singh. She took a dip in
+      the swimming pool, enjoyed the full moon, and posed with her friends for
+      pictures.
+    </p>
+    <img src="./img/12.png" alt="sara ali khan image" />
+    <p>
+      Sara Ali Khan took a trip to Kashmir with Amrita Singh. She took a dip in
+      the swimming pool, enjoyed the full moon, and posed with her friends for
+      pictures.
+    </p>
+    <p>
+      In the first photo, Sara pouted as she posed for a selfie with the night
+      sky and the moon in the background. She wore a saffron sweater and a
+      woollen cap in the picture. Dressed in warm clothes, Sara sat outdoors as
+      she closed her eyes and leaned on her friend who stood behind her in the
+      next photo.
+    </p>
+    <p>
+      Sara was seen in a different outfit as she hugged her friend in the next
+      picture. Sara, her friends, and Amrita Singh sat around an indoor
+      fireplace as they posed for the next picture. Sara, dressed in a saffron
+      sweater and beige pants, kept her hands near the fire as she looked
+      towards it. Amrita opted for a black outfit as she sat behind her
+      daughter.
+    </p>
+    <hr />
+
+    <h1 id="n13">
+      Suhana Khan looks radiant in pictures from New York, calls it ‘happy
+      place’
+    </h1>
+    <p>
+      Shah Rukh Khan's daughter Suhana Khan posted a bunch of pictures from her
+      stay at New York on Instagram.
+    </p>
+    <img src="./img/13.png" alt="suhana khan's image" />
+    <p>
+      Shah Rukh Khan and Gauri Khan's daughter, Suhana Khan, who is quite active
+      on social media, shared a bunch of candid pictures on her Instagram
+      detailing her recent stay at New York. Suhana shared a picture of the
+      current book she's reading as inspiration along with a cute photo of
+      herself and captioned the post, "Happy place." (Also read: Suhana Khan
+      becomes the brand ambassador for Maybelline ahead of debut, Reddit says
+      'privilege is real')
+    </p>
+    <p>
+      In one of the pictures, Suhana looked directly at the camera and smiled.
+      She looked radiant in a little black dress and minimal accessories, while
+      keeping her hair untied. In another picture she shared the inside space of
+      a flower shop with a bunch of beautiful flowers kept in the space. Suhana
+      also shared a row full of movie scripts displayed in colourful papers in
+      another picture. From Birdman to The Devil Wears Prada, Inception to The
+      Godfather 3, Eternal Sunshine of the Spotless Mind to Silver Linings
+      Playbook, there were many iconic titles that could be spotted in the
+      picture.
+    </p>
+    <p>
+      Suhana recently became the new face of the New York-based beauty brand,
+      Maybelline. Suhana had shared a glimpse of one of her advertisement on
+      Instagram, and written, “Thrilled to be the new face of Maybelline New
+      York and to share the space with these amazing women!” At the event launch
+      in Mumbai last month, she addressed the media and said, "I'm just really
+      excited to be here and I can't wait for you guys to see everything we have
+      filmed. It's an honour to be a brand ambassador for Maybelline after
+      hoarding so many of their iconic products, especially their mascaras are
+      amazing. But, yeah I am just super excited and happy to be a part of this
+      brand and I can't wait to make it shine with all of you.”
+    </p>
+    <p>
+      Suhana studied at the New York University’s Tisch School of the Arts
+      before returning to India in 2021. She is all set to make her Bollywood
+      debut with the film The Archies. Directed by Zoya Akhtar, The Archies also
+      marks the acting debut of Amitabh Bachchan's grandson Agastya Nanda and
+      Sridevi's younger daughter Khushi Kapoor. The Archies is set to provide a
+      fresh take on the iconic gang of The Archies and will recreate the
+      youthful energy and excitement of the 60s.
+    </p>
+
+    <hr />
+
+    <h1 id="n14">A message of hope to India from the Muslim world</h1>
+    <p>
+      At the Dar al Iftaa, Egypt’s body for Islamic legal edicts over which I
+      preside, we constantly wrestle with the issue of applying Islam to the
+      modern world.
+    </p>
+    <img src="./img/14.png" alt="muslim people image" />
+    <p>
+      Western and eastern officials and commentators are consumed by the
+      question, “Where are the moderate Muslims?” Many, seeing only the
+      extremism perpetuated by a radical few, despair about finding progressive
+      and peaceful partners to stand with in the Muslim world. However,
+      reconciling Islam with the modern world has been an imperative for
+    </p>
+    <hr />
+
+    <h1 id="n15">
+      ‘Delhi police abused, kicked us’: Farmers stopped at Singhu Border from
+      going to Jantar Mantar to support wrestlers
+    </h1>
+    <p>
+      A scuffle had broken out between Delhi Police and protesting wrestlers at
+      Jantar Mantar on Wednesday. The wrestlers alleged they were manhandled by
+      the police.
+    </p>
+    <img src="./img/15.png" alt="Farmers image" />
+    <p>
+      Hours after the wrestlers, who have been protesting at Delhi's Jantar
+      Mantar against Wrestling Federation of India (WFI) chief and BJP MP Brij
+      Bhushan Sharan Singh over sexual harassment allegations, requested for
+      farmers and their leaders to be present at the protest site after a
+      scuffle between Delhi Police and the wrestlers, several farmers' leaders
+      alleged on Thursday that they were stopped at the Haryana's Singhu border
+      from going to Jantar Mantar.
+    </p>
+    <p>
+      Bharatiya Kisan Union (BKU) leader Abhimanyu Kohar said on Twitter, “We
+      were peacefully with our elders and youngsters were going to Jantar Mantar
+      to support the wrestlers. At Singhu Border, Delhi Police personnels
+      stopped us, misbehaved, abused us and kicked senior farmers leaders. They
+      aggressively pushed us in a police bus and brought us to Bavana Police
+      Station. I request everyone who has a conscience to come on the streets in
+      support of the wrestlers. This is not a small issue, it is an issue of
+      honour of our daughters.”
+    </p>
+    <hr />
+    <h1 id="n16">
+      Jonty Rhodes makes big MS Dhoni revelation behind helping support staff
+      with ground covers in LSG vs CSK IPL tie
+    </h1>
+    <p>
+      Jonty Rhodes has made a big MS Dhoni revelation after helping the support
+      staff with ground covers in the IPL 2023 match between CSK and LSG.
+    </p>
+    <img src="./img/16.png" alt="cricketer image" />
+    <p>
+      The smallest act of kindness is worth more than the grandest intention.
+      And that's exactly why Jonty Rhodes became the talk of the town in an
+      Indian Premier League (IPL) 2023 game which was abandoned due to rain.
+      Breaking the internet with his incredible gesture for the groundstaff
+      during the rain-curtailed encounter between Lucknow Super Giants (LSG) and
+      MS Dhoni's Chennai Super Kings (CSK), the legendary South African
+      cricketer offered a helping hand to the ground staff when they were
+      bringing the covers to protect the match pitch at the Bharat Ratna Shri
+      Atal Bihari Vajpayee Ekana Cricket Stadium.
+    </p>
+    <p>
+      Rhodes, who is universally loved by the fans and followers of the game,
+      received several noteworthy mentions from IPL aficionados on Twitter for
+      his priceless gesture. "You can teach technique. You can teach stamina.
+      You can teach field settings. You can't teach being grounded. What a
+      legend! @JontyRhodes8 #LSGvsCSK #TATAIPL2023," a fan hailed Rhodes for his
+      million-dollar gesture at Lucknow.
+    </p>
+    <hr />
+
+    <h1 id="n17">
+      Gauahar Khan shares glimpses of 'blessed' baby shower, with beautiful
+      people, love and yummy food. Watch
+    </h1>
+    <p>
+      Gauahar Khan updated her Instagram with pictures and shared details from
+      her 'blessed' baby shower filled with love, special people and yummy food
+    </p>
+    <img src="./img/17.png" alt="gauhar khan's image" />
+    <p>
+      On Sunday, mom-to-be Gauahar Khan was feted with a baby shower attended by
+      close friends and family. She and husband Zaid Darbar also posed for
+      several pictures from the private event. She updated her Instagram on
+      Thursday with pictures and details from her 'blessed' baby shower filled
+      with lots of love, special people and yummy food. (Also read: Mom-to-be
+      Gauahar Khan glows in floral gown at baby shower, husband Zaid Darbar
+      joins her. See pics)
+    </p>
+    <p>
+      In her first post, Gauahar shared pics of herself and Zaid at the baby
+      shower. She captioned it, "A blessed day ! #alhamdulillah Ma sha Allah
+      #gaza #babyshower." Gauahar wore a colourful floral gown for the baby
+      shower, while Zaid had on a striped shirt in blue, red and green, with
+      white pants.
+    </p>
+    <p>
+      She also added an Instagram Reel filed with photos from the event. The
+      actor wrote, "The most beautiful people who stood by me throughout my
+      pregnancy ! Made it special and full of love ! Alhamdulillah ! my
+      @nigaarzkhan checked on me n made me feel special from across the globe .
+      may Allah bless all of you ! @akriti_raj_chitkara_mua n yukti came all the
+      way to give me love few months ago too #moments." In the photos, friends
+      like actors Gautam Rode and Pankhuri and brothers Raghu Ram and Rajeev
+      Laxman can be seen posing for pics with Gauahar and Zaid.
+    </p>
+    <hr />
+
+    <h1 id="n18">
+      ‘Blood lust’: Mahua Moitra slams Yogi after gangster Anil Dujana killed in
+      encounter
+    </h1>
+    <p>
+      Gangster Anil Dujana was killed in an encounter with the UP police's STF
+      near Bhola ki Jhaal under the Jaani police station limits in Meerut.
+    </p>
+    <img src="./img/18.png" alt="Mahua moitra image" />
+    <p>
+      Trinamool Congress (TMC) MP Mahua Moitra on Thursday slammed Uttar Pradesh
+      chief minister Yogi Aditynath over gangster Anil Dujana's killing in an
+      encounter with a team of UP police's Special Task Force (STF) in Meerut.
+      The TMC leader said that “extra-judicial killings have no place in a
+      constitutional democracy”.
+    </p>
+    <p>
+      “Why are encounter killings replacing the due process of law? What blood
+      lust is Hon’ble CM Ajay Bisht instructing UP police to satisfy?”, Moitra
+      questioned in a tweet.
+    </p>
+    <p>
+      Earlier in the day, gangster Anil Dujana was killed in an encounter with
+      the UP police's STF near Bhola ki Jhaal under the Jaani police station
+      limits in Meerut. According to the police, Dujana fired at the police to
+      escape and was killed during the retaliatory firing. After the encounter,
+      the STF took the gangster to a hospital where doctors declared him
+      "brought dead".
+    </p>
+    <hr />
+
+    <h1 id="n19">
+      'If BCCI decides to ban Kohli, Gambhir...': Sehwag's stern 'my kids can
+      lip-read, understand Ben Stokes' message
+    </h1>
+    <p>
+      Sehwag called Kohli, Gambhir icons while adding that anything they do or
+      say is watched hawkishly and is likely to be imbibed by the millions of
+      young fans.
+    </p>
+    <img src="./img/19.png" alt="cricketer image" />
+    <p>
+      Virender Sehwag has called for a much-improved behaviour from Virat Kohli
+      and Gautam Gambhir after the two former India teammates engaged in an
+      ultra-aggressive spat after the IPL 2023 match featuring Lucknow Super
+      Giants and Royal Challengers Bangalore. Kohli and Gambhir, who have quite
+      the history between the two launched a no-holds-barred verbal attack on
+      each other, making for a rather unpleasant viewing on national television.
+      Kohli and Gambhir's infamous brawl emerged as the talking point, and
+      almost 48 hours later, it still is making the headlines.
+    </p>
+    <p>
+      Sehwag, who with Gambhir formed one of India's best opening pairs, and
+      played five years of international cricket with Kohli, has reminded both
+      about the stature they hold in Indian cricket, urging both to conduct
+      themselves a lot better. Sehwag called Kohli, Gambhir icons while adding
+      that anything they do or say is watched hawkishly and is likely to be
+      imbibed by the millions of young fans in the country.
+    </p>
+    <p>
+      "I switched off the TV once the match got over. I had no idea about what
+      happened after the match. The next day when I woke up, I saw a lot of
+      chaos on social media. What happened wasn't right. The loser should
+      quietly accept defeat and walk away and the winning team should celebrate.
+      Why did they need to say anything to each other. I always say one thing,
+      that these guys are icons of the country. If they do or say anything,
+      millions of kids follow them and probably think 'If my icon has done this,
+      I would too'. So if they keep these things in mind, they would limit such
+      incidents," Sehwag said on Cricbuzz.
+    </p>
+    <p>
+      Although the BCCI has slapped both Gambhir and Kohli with 100 per cent
+      fines, Sehwag isn't the first and certainly won't be the last to propose
+      stricter actions. The former India batter feels that such incidents could
+      become a lot less frequent if the board start and decide to suspend
+      players for crossing the lines. The IPL in particular has a history of
+      such heated altercations – the Kieron Pollard vs Mitchell Starc spat, MS
+      Dhoni entering the field to protest and umpire's decision, Rishabh Pant
+      doing the same last year and now Kohli-Gambhir reigniting their rivalry –
+      and Sehwag suggests imposing a heavier action might put a leash on such
+      incidents.
+    </p>
+    <p>
+      "If the BCCI decides to ban anyone, then maybe such incidents will happen
+      rarely or not take place at all. Such incidents have happened several
+      times in the past so it's better to do whatever you want to inside the
+      controlled environment of the dressing room. When you're on the ground,
+      these things don't look nice. My own kids can lip-read and they very well
+      understand Ben Stokes. So that is when I feel bad. If you're saying such
+      things, if my kids can read it, others can too and tomorrow they will
+      think that if they (Kohli and Gambhir) can say it, so can I," he added.
+    </p>
+    <hr />
+
+    <h1 id="n20">
+      6 healthy relationship habits that are wrongfully considered toxic
+    </h1>
+    <p>
+      From taking space to ending the relationship when things do not work out,
+      here are a few healthy relationship patterns.
+    </p>
+    <img src="./img/20.png" alt="couple image" />
+    <p>
+      Every relationship has its own set of rules. From childhood, we have
+      romanticised the idea of relationships and stereotyped it with our
+      knowledge of romance from books, films and music. However, in reality,
+      dreamy relationships are the ones that know how to create a safe space for
+      the people involved and know how to embrace each other in their wholeness
+      and honesty. We often consider a lot of habits in relationships as toxic,
+      when they are just ways of creating better space and the idea of
+      individuality in relationships. “A lot of healthy relationship habits get
+      a bad reputation because of idealized romanticised narratives in
+      literature, movies, and pop culture. We absorb them, and then apply them
+      to our relationships. These misunderstandings prevent us from acting in
+      these healthy ways, because we think they are wrong. This can create
+      misunderstandings and further solidify unhealthy patterns,” Therapist
+      Israa Nasir further explained.
+    </p>
+    <p>
+      Israa pointed out a few relationship habits that are considered toxic,
+      when in reality they are healthy:
+    </p>
+    <p>
+      Taking space: We often mistake spending alone time in a relationship as a
+      fight or a distance from the other person. But the truth is, in
+      relationships or otherwise, everyone needs their space, and it helps them
+      to figure themselves.
+    </p>
+    <p>
+      Having a crush: Finding someone else attractive is a natural process and
+      is also healthy. As long as we are not being dishonest and cheating on our
+      partner, we are allowed to admire others.
+    </p>
+    <p>
+      Unresolved arguments: Sometimes the best way to agree to disagree is to
+      leave a few arguments unresolved. We can take our own time in coming back
+      to it, or not.
+    </p>
+    <p>
+      Independence: Being independent and having our own set of friends is a
+      healthy way of having a life outside the relationship. This helps in
+      avoiding unhealthy dependence on our partner.
+    </p>
+  </body>
+</html>
